@@ -8,3 +8,6 @@ font-family: 'Arvo', serif;*/
   /*font-family: 'Arvo', serif;*/
   background-color: black;
 }
+#template{
+display: none !important;
+}

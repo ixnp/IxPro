@@ -10,7 +10,7 @@ function Projects (rawDataObj){
 }
 
 Projects.prototype.toHtml= function(){
-  var template = Handlebars.compile($("#template").text());
+  var template = Handlebars.compile($("#template").html());
   return template(this);
 };
 
