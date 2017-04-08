@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style\style.css">
-    <title></title>
-  </head>
+    <meta charset="UTF-8">
+    <title>Ix Procopios</title>
+    <link href="vendor/animista.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/module.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|VT323" rel="stylesheet">
+
+    <script id="template" type="text/x-handlebars-template">
+            <h2 >{{name}}</h2>
+            <a href="http://github.com/" > {{git}}</a>
+          <a href="html-image-hyperlink.php"><img src=""/>{{image}}</a>
+          <p id="about">{{about}}</p>
+      <!-- <div id="art">
+        art stuff
+        <image src="{{artImage}}">
+      </div> -->
+    </script>
+
+
+
+</head>
   <body>
   <div class="top">
     <!-- top of the page -->
     <!-- background image -->
-    <img src="" alt="">
+    <img src="images\portfolio2.png" alt="" class="bannerImage">
+    <h1 class="text-flicker-in-glow">Ixius Procopios</h1>
+    <button id="aboutButton" class="aboutButton">about ix</button>
+      <div id="aboutMe" class="aboutMe">
+        <h2>Stuff about me</h2>
+        <p>You are only limited by your imagination. This is a happy place, little squirrels live here and play. Everyone wants to enjoy the good parts - but you have to build the framework first. Of course he's a happy little stone, cause we don't have any other kind. Let's give him a friend too. Everybody needs a friend. Isn't it fantastic that you can change your mind and create all these happy things?
+
+God gave you this gift of imagination. Use it. Use what you see, don't plan it. Let's make a happy little mountain now. Each highlight must have it's own private shadow. This is truly an almighty mountain. We tell people sometimes: we're like drug dealers, come into town and get everybody absolutely addicted to painting. It doesn't take much to get you addicted.</p>
     <!-- links to facebook or other things -->
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/master.css">
+    <!-- Links to other areas of the page-->
   </div>
-  <div id="content">
-    <div id="projectsContainer">
-      <ul class="projTemplate">
-        <li id="name">name</li>
-        <li id="about">about</li>
-        <li><a href="html-image-hyperlink.php"><img src=""/></a></li>
-      </ul>
+<main>
+  <section id="content" class="pro-content">
+  </section>
+</main>
 
 
-    </div>
-    <!-- idk yet -->
-  </div>
-<script src="vendor\jquery-3.2.0.js"></script>
-<script src="source\source.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script src="source/tempPro.js"></script>
+<script src="source/source.js"></script>
   </body>
   <footer></footer>
 </html>

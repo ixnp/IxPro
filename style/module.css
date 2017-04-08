@@ -1,0 +1,27 @@
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 4s linear both;
+	-moz-animation: text-flicker-in-glow 4s linear both;
+	animation: text-flicker-in-glow 4s linear both;
+}
+
+.aboutMe{
+  visibility: hidden;
+
+}
+.aboutMeTwo{
+	margin: 30px;
+}
+.aboutButton
+{
+	margin-top: 5%;
+	min-width: 100px;
+	/*border-style:none;*/
+	font-size: 8em;
+	border: none;
+}
+.aboutButton:hover{
+	color:#D44982;
+}
+#template{
+display: none;
+}
