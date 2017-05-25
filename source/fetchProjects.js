@@ -4,11 +4,11 @@
 var projectsArr = []
 
 function Projects (rawDataObj){
-  this.name = rawDataObj.name;
-  this.image = rawDataObj.image;
-  this.git = rawDataObj.git;
-  this.about = rawDataObj.about;
+  for (key in rawDataObj){
+    this[key] = rawDataObj [key];
+  }
 }
+
 
 Projects.prototype.toHtml= function(){
   var template = Handlebars.compile($("#template").html());
