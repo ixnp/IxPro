@@ -16,26 +16,10 @@ Projects.prototype.toHtml= function(){
 };
 
 
-// function handleFetchProjects(){
-//   $.getJSON('data/tempPro.json')
-//   .then(function(data){
-//     console.log(data);
-//     data.forEach(function(projectsObj){
-//       projectsArr.push(new Project(projectsObj));
-//       console.log('project array being built', projectsArr);
-//     });
-// projectsArr.forEach(function(newProjectObject){
-//   $('#template').append(newProjectObject.toHtml());
-// });
-// }, function(err){
-//   console.error(err);
-// });
-// };
-
 $(document).ready(function handleFetchProjects(){
     $.getJSON('data/tempPro.json')
     .then(function(data){
-      console.log(data);
+      console.log('data',data);
       data.forEach(function(projectsObj){
         projectsArr.push(new Project(projectsObj));
         console.log('project array being built', projectsArr);

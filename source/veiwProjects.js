@@ -30,8 +30,8 @@ $('#aboutButton').on('click',function(e){
   e.preventDefault();
 });
 
-initIndexPage = function(){
-projectsArr.forEach(function(projectsArr){
-  $('#content').append(projectsArr.toHtml())
-});
-}
+// initIndexPage = function(){
+// projectsArr.forEach(function(projectsArr){
+//   $('#content').append(projectsArr.toHtml())
+// });
+// }
