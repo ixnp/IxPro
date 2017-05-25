@@ -7,7 +7,7 @@ function Projects (rawDataObj){
   for (key in rawDataObj){
     this[key] = rawDataObj [key];
   }
-}
+};
 
 
 Projects.prototype.toHtml= function(){
@@ -16,16 +16,34 @@ Projects.prototype.toHtml= function(){
 };
 
 
-function handleFetchProjects(){
-  $.get('data/tempPro.json')
-  .then(function(data){
-    console.log(data);
-    data.forEach(function(projectsObj){
-      projectsArr.push(new Project(projectsObj));
-      console.log('project array being built', projectsArr);
-    });
-    projectsArr.forEach(function)
-  })
+// function handleFetchProjects(){
+//   $.getJSON('data/tempPro.json')
+//   .then(function(data){
+//     console.log(data);
+//     data.forEach(function(projectsObj){
+//       projectsArr.push(new Project(projectsObj));
+//       console.log('project array being built', projectsArr);
+//     });
+// projectsArr.forEach(function(newProjectObject){
+//   $('#template').append(newProjectObject.toHtml());
+// });
+// }, function(err){
+//   console.error(err);
+// });
+// };
 
-};
-handleFetchProjects();
+$(document).ready(function handleFetchProjects(){
+    $.getJSON('data/tempPro.json')
+    .then(function(data){
+      console.log(data);
+      data.forEach(function(projectsObj){
+        projectsArr.push(new Project(projectsObj));
+        console.log('project array being built', projectsArr);
+      });
+  projectsArr.forEach(function(newProjectObject){
+    $('#template').append(newProjectObject.toHtml());
+  });
+  }, function(err){
+    console.error(err);
+  });
+});
