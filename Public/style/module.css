@@ -1,0 +1,39 @@
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 4s linear both;
+	-moz-animation: text-flicker-in-glow 4s linear both;
+	animation: text-flicker-in-glow 4s linear both;
+}
+
+.aboutMe{
+  visibility: hidden;
+	margin: 0;
+	padding: 0:;
+	max-width: 1px;
+	max-height:1px;
+
+}
+.aboutMeTwo{
+	margin: 30px;
+}
+.aboutButton
+{
+
+	min-width: 100px;
+	/*border-style:none;*/
+	font-size: 8vw;
+	border: none;
+	-webkit-animation: text-flicker-in-glow 4s linear both;
+	-moz-animation: text-flicker-in-glow 4s linear both;
+	animation: text-flicker-in-glow 3.9s linear both;
+}
+.aboutButton:hover{
+	background-color: none;
+	color:	#FF1493;
+	-webkit-stroke-width: 5.3px;
+	-webkit-stroke-color: #FFFFFF;
+	-webkit-fill-color: #FFFFFF;
+	text-shadow: 1px 0px 20px #C71585;
+}
+.project-image-link{
+max-width: 400px;
+}
